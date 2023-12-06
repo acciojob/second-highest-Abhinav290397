@@ -11,7 +11,7 @@
 		function secondHighest(arr) {
 			//Write your code here
 			let n = arr.length;
-			if(n < 2 || new Set(arr).size === 1)return Infinity;
+			if(n < 2 || new Set(arr).size === 1)return -Infinity;
 			arr.sort((a,b) => {
 				return a-b;
 			});
